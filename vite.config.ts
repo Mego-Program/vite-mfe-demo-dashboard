@@ -11,7 +11,7 @@ export default defineConfig({
 
       shared: ["react", "react-dom"],
       remotes: {
-        remote: "http://localhost:3000/assets/remoteEntry.js",
+        remote: "https://vite-mfe-demo-remote.vercel.app/assets/remoteEntry.js",
       },
     }),
   ],
