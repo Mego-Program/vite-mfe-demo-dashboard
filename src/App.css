@@ -10,6 +10,7 @@
   flex-direction: column;
   width: 100%;
   justify-items: start;
+  row-gap: 50px;
 }
 
 .flex {
@@ -26,6 +27,7 @@ img {
   margin-top: 0.5rem;
   font-size: 27px;
   line-height: 1;
+  text-align: start;
 }
 .welcome-user .sub-text {
   font-size: 17px;
