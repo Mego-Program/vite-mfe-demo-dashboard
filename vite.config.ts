@@ -8,10 +8,13 @@ export default defineConfig({
     federation({
       name: "dashboard",
       filename: "remoteEntry.js",
-
+      exposes: {
+        "./DashboardApp": "./src/DashboardApp",
+      },
       shared: ["react", "react-dom"],
       remotes: {
-        remote: "https://vite-mfe-demo-remote.vercel.app/assets/remoteEntry.js",
+        //remote: "https://vite-mfe-demo-remote.vercel.app/assets/remoteEntry.js",
+        remote: "http://localhost:3000/assets/remoteEntry.js"
       },
     }),
   ],
